@@ -6,6 +6,7 @@ app.get('/',(req,res)=>{
     res.send('Yeee AWS!!')
 })
 
-app.listen('3000',(req,res)=>{
+let port =process.env.port || 3000;
+app.listen(port,(req,res)=>{
     console.log('Listening to 3000')
 })
